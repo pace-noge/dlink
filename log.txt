@@ -1,0 +1,73 @@
+meminfo
+Total MDM Shared Memory Region : 544KB
+Shared Memory Usable           : 000468KB
+Shared Memory in-use           : 000086KB
+Shared Memory free             : 000382KB
+Shared Memory allocs           : 362375
+Shared Memory frees            : 360720
+Shared Memory alloc/free delta : 001655
+
+Heap bytes in-use     : 000016
+Heap allocs           : 000052
+Heap frees            : 000051
+Heap alloc/free delta : 000001
+ > 
+cat proc/cpuinfo
+system type             : 96328ang
+processor               : 0
+cpu model               : Broadcom4350 V7.5
+BogoMIPS                : 319.48
+wait instruction        : yes
+microsecond timers      : yes
+tlb_entries             : 32
+extra interrupt vector  : no
+hardware watchpoint     : no
+ASEs implemented        :
+shadow register sets    : 1
+core                    : 0
+VCED exceptions         : not available
+VCEI exceptions         : not available
+
+unaligned exceptions            : 13704
+ > 
+cat /proc/meminfo
+MemTotal:          60872 kB
+MemFree:           27620 kB
+Buffers:            3368 kB
+Cached:            11492 kB
+SwapCached:            0 kB
+Active:             7628 kB
+Inactive:          10284 kB
+Active(anon):       3052 kB
+Inactive(anon):        0 kB
+Active(file):       4576 kB
+Inactive(file):    10284 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          3068 kB
+Mapped:             3188 kB
+Slab:              11748 kB
+SReclaimable:        476 kB
+SUnreclaim:        11272 kB
+PageTables:          308 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       30436 kB
+Committed_AS:       6468 kB
+VmallocTotal:    1032148 kB
+VmallocUsed:        3300 kB
+VmallocChunk:    1013576 kB
+ > 
+ifconfig ppp0
+ppp0            Link encap:Point-Point Protocol  
+                inet addr:36.78.1.57  P-t-P:36.78.0.1  Mask:255.255.255.255
+                UP POINTOPOINT RUNNING NOARP ALLMULTI MULTICAST  MTU:1400  Metric:1
+                RX packets:1046842 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:821569 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:3 
+                RX bytes:1247282066 (1.1 GiB)  TX bytes:86580129 (82.5 MiB)
+
+ > 
